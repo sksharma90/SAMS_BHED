@@ -1,0 +1,1206 @@
+<html>
+<head>
+<title>TestNG:  ScenarioTesting</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ScenarioTesting</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>191/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 23 10:37:43 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>8340 seconds (8340938 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.BEd.Tests.BacktoModifyfunctionality.BackToModify()'><b>BackToModify</b><br>Test class: com.BEd.Tests.BacktoModifyfunctionality</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#lblApplicantName&quot;}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CSMBHUD299&apos;, ip: &apos;192.168.25.61&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\root\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cdaac02d0ca55af8949fc7e8f5336aa7
+*** Element info: {Using=id, value=lblApplicantName}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.BEd.ObjectRepository.BEdCAF.LableApplicantName(BEdCAF.java:891)
+	at com.BEd.Tests.BacktoModifyfunctionality.BackToModify(BacktoModifyfunctionality.java:142)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace947671934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace947671934'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#lblApplicantName&quot;}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CSMBHUD299&apos;, ip: &apos;192.168.25.61&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\root\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cdaac02d0ca55af8949fc7e8f5336aa7
+*** Element info: {Using=id, value=lblApplicantName}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.BEd.ObjectRepository.BEdCAF.LableApplicantName(BEdCAF.java:891)
+	at com.BEd.Tests.BacktoModifyfunctionality.BackToModify(BacktoModifyfunctionality.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>77</td>
+<td>com.BEd.Tests.BacktoModifyfunctionality@14c01636</td></tr>
+<tr>
+<td title='com.BEd.Tests.BacktoModifyfunctionality.DuplicateRollNumberCheckBackToModify()'><b>DuplicateRollNumberCheckBackToModify</b><br>Test class: com.BEd.Tests.BacktoModifyfunctionality</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnBackToModify&quot;}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CSMBHUD299&apos;, ip: &apos;192.168.25.61&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\root\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cdaac02d0ca55af8949fc7e8f5336aa7
+*** Element info: {Using=id, value=btnBackToModify}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.BEd.ObjectRepository.BEdCAF.BackToModify(BEdCAF.java:864)
+	at com.BEd.Tests.BacktoModifyfunctionality.DuplicateRollNumberCheckBackToModify(BacktoModifyfunctionality.java:292)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1633674785", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1633674785'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnBackToModify&quot;}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CSMBHUD299&apos;, ip: &apos;192.168.25.61&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\root\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cdaac02d0ca55af8949fc7e8f5336aa7
+*** Element info: {Using=id, value=btnBackToModify}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.BEd.ObjectRepository.BEdCAF.BackToModify(BEdCAF.java:864)
+	at com.BEd.Tests.BacktoModifyfunctionality.DuplicateRollNumberCheckBackToModify(BacktoModifyfunctionality.java:292)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>31</td>
+<td>com.BEd.Tests.BacktoModifyfunctionality@14c01636</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.BEd.Tests.AadhaarValidations.AadhaarWithInValidData()'><b>AadhaarWithInValidData</b><br>Test class: com.BEd.Tests.AadhaarValidations</td>
+<td></td>
+<td>26</td>
+<td>com.BEd.Tests.AadhaarValidations@1ef3efa8</td></tr>
+<tr>
+<td title='com.BEd.Tests.AadhaarValidations.AadhaarWithValidData()'><b>AadhaarWithValidData</b><br>Test class: com.BEd.Tests.AadhaarValidations</td>
+<td></td>
+<td>53</td>
+<td>com.BEd.Tests.AadhaarValidations@1ef3efa8</td></tr>
+<tr>
+<td title='com.BEd.Tests.MobileNoComparison.AcceptanceofDuplicateAlternateMobileNo()'><b>AcceptanceofDuplicateAlternateMobileNo</b><br>Test class: com.BEd.Tests.MobileNoComparison</td>
+<td></td>
+<td>61</td>
+<td>com.BEd.Tests.MobileNoComparison@fd8294b</td></tr>
+<tr>
+<td title='com.BEd.Tests.OOTCriteria.ApplyingByNonOOTStates()'><b>ApplyingByNonOOTStates</b><br>Test class: com.BEd.Tests.OOTCriteria</td>
+<td></td>
+<td>36</td>
+<td>com.BEd.Tests.OOTCriteria@12bcd0c0</td></tr>
+<tr>
+<td title='com.BEd.Tests.OOTCriteria.ApplyingByOOTStates()'><b>ApplyingByOOTStates</b><br>Test class: com.BEd.Tests.OOTCriteria</td>
+<td></td>
+<td>90</td>
+<td>com.BEd.Tests.OOTCriteria@12bcd0c0</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFByEachAppearingGraduates.ApplyingCAFByArtsAppearingGraduate()'><b>ApplyingCAFByArtsAppearingGraduate</b><br>Test class: com.BEd.Tests.ApplyingCAFByEachAppearingGraduates</td>
+<td></td>
+<td>45</td>
+<td>com.BEd.Tests.ApplyingCAFByEachAppearingGraduates@306851c7</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFByEachGraduates.ApplyingCAFByArtsGraduate()'><b>ApplyingCAFByArtsGraduate</b><br>Test class: com.BEd.Tests.ApplyingCAFByEachGraduates</td>
+<td></td>
+<td>54</td>
+<td>com.BEd.Tests.ApplyingCAFByEachGraduates@37b70343</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFByEachAppearingGraduates.ApplyingCAFByBtechAppearingGraduate()'><b>ApplyingCAFByBtechAppearingGraduate</b><br>Test class: com.BEd.Tests.ApplyingCAFByEachAppearingGraduates</td>
+<td></td>
+<td>55</td>
+<td>com.BEd.Tests.ApplyingCAFByEachAppearingGraduates@306851c7</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFByEachGraduates.ApplyingCAFByBtechGraduate()'><b>ApplyingCAFByBtechGraduate</b><br>Test class: com.BEd.Tests.ApplyingCAFByEachGraduates</td>
+<td></td>
+<td>55</td>
+<td>com.BEd.Tests.ApplyingCAFByEachGraduates@37b70343</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFByEachAppearingGraduates.ApplyingCAFByBtechLateralAppearingGraduate()'><b>ApplyingCAFByBtechLateralAppearingGraduate</b><br>Test class: com.BEd.Tests.ApplyingCAFByEachAppearingGraduates</td>
+<td></td>
+<td>38</td>
+<td>com.BEd.Tests.ApplyingCAFByEachAppearingGraduates@306851c7</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFByEachGraduates.ApplyingCAFByBtechLateralGraduate()'><b>ApplyingCAFByBtechLateralGraduate</b><br>Test class: com.BEd.Tests.ApplyingCAFByEachGraduates</td>
+<td></td>
+<td>38</td>
+<td>com.BEd.Tests.ApplyingCAFByEachGraduates@37b70343</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFWithDiffGender.ApplyingCAFByFemaleCandidate()'><b>ApplyingCAFByFemaleCandidate</b><br>Test class: com.BEd.Tests.ApplyingCAFWithDiffGender</td>
+<td></td>
+<td>61</td>
+<td>com.BEd.Tests.ApplyingCAFWithDiffGender@662f5666</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFWithDiffGender.ApplyingCAFByMaleCandidate()'><b>ApplyingCAFByMaleCandidate</b><br>Test class: com.BEd.Tests.ApplyingCAFWithDiffGender</td>
+<td></td>
+<td>53</td>
+<td>com.BEd.Tests.ApplyingCAFWithDiffGender@662f5666</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFWithDifferentBoards.ApplyingCAFByNonOdishaBoard()'><b>ApplyingCAFByNonOdishaBoard</b><br>Test class: com.BEd.Tests.ApplyingCAFWithDifferentBoards</td>
+<td></td>
+<td>61</td>
+<td>com.BEd.Tests.ApplyingCAFWithDifferentBoards@2e11485</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFWithDifferentBoards.ApplyingCAFByOdishaBoard()'><b>ApplyingCAFByOdishaBoard</b><br>Test class: com.BEd.Tests.ApplyingCAFWithDifferentBoards</td>
+<td></td>
+<td>54</td>
+<td>com.BEd.Tests.ApplyingCAFWithDifferentBoards@2e11485</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFByEachAppearingGraduates.ApplyingCAFByScienceAppearingGraduate()'><b>ApplyingCAFByScienceAppearingGraduate</b><br>Test class: com.BEd.Tests.ApplyingCAFByEachAppearingGraduates</td>
+<td></td>
+<td>52</td>
+<td>com.BEd.Tests.ApplyingCAFByEachAppearingGraduates@306851c7</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFByEachGraduates.ApplyingCAFByScienceGraduate()'><b>ApplyingCAFByScienceGraduate</b><br>Test class: com.BEd.Tests.ApplyingCAFByEachGraduates</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.ApplyingCAFByEachGraduates@37b70343</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFWithDiffGender.ApplyingCAFByTransgenderCandidate()'><b>ApplyingCAFByTransgenderCandidate</b><br>Test class: com.BEd.Tests.ApplyingCAFWithDiffGender</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.ApplyingCAFWithDiffGender@662f5666</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFWithDiffernetExamType.ApplyingCAFWithAnnualExamType()'><b>ApplyingCAFWithAnnualExamType</b><br>Test class: com.BEd.Tests.ApplyingCAFWithDiffernetExamType</td>
+<td></td>
+<td>53</td>
+<td>com.BEd.Tests.ApplyingCAFWithDiffernetExamType@60dce7ea</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFWithDiffernetExamType.ApplyingCAFWithSupplementaryExamType()'><b>ApplyingCAFWithSupplementaryExamType</b><br>Test class: com.BEd.Tests.ApplyingCAFWithDiffernetExamType</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.ApplyingCAFWithDiffernetExamType@60dce7ea</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSC.ArtsWithLessThan45PercentageInGraduation()'><b>ArtsWithLessThan45PercentageInGraduation</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSC</td>
+<td></td>
+<td>56</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSC@5b07730f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForST.ArtsWithLessThan45PercentageInGraduation()'><b>ArtsWithLessThan45PercentageInGraduation</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForST</td>
+<td></td>
+<td>56</td>
+<td>com.BEd.Tests.EligibilityCriteriaForST@1fdfafd2</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSEBC.ArtsWithLessThan45PercentageInGraduation()'><b>ArtsWithLessThan45PercentageInGraduation</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSEBC</td>
+<td></td>
+<td>56</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSEBC@a4b2d8f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForPH.ArtsWithLessThan45PercentageInGraduation()'><b>ArtsWithLessThan45PercentageInGraduation</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForPH</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.EligibilityCriteriaForPH@dcfda20</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForGeneral.ArtsWithLessThan50PercentageInGraduation()'><b>ArtsWithLessThan50PercentageInGraduation</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForGeneral</td>
+<td></td>
+<td>57</td>
+<td>com.BEd.Tests.EligibilityCriteriaForGeneral@58ebfd03</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSC.ArtsWithMoreThan45PercentageInGraduation()'><b>ArtsWithMoreThan45PercentageInGraduation</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSC</td>
+<td></td>
+<td>46</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSC@5b07730f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForST.ArtsWithMoreThan45PercentageInGraduation()'><b>ArtsWithMoreThan45PercentageInGraduation</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForST</td>
+<td></td>
+<td>46</td>
+<td>com.BEd.Tests.EligibilityCriteriaForST@1fdfafd2</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSEBC.ArtsWithMoreThan45PercentageInGraduation()'><b>ArtsWithMoreThan45PercentageInGraduation</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSEBC</td>
+<td></td>
+<td>46</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSEBC@a4b2d8f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForPH.ArtsWithMoreThan45PercentageInGraduation()'><b>ArtsWithMoreThan45PercentageInGraduation</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForPH</td>
+<td></td>
+<td>50</td>
+<td>com.BEd.Tests.EligibilityCriteriaForPH@dcfda20</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForGeneral.ArtsWithMoreThan50PercentageInGraduation()'><b>ArtsWithMoreThan50PercentageInGraduation</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForGeneral</td>
+<td></td>
+<td>46</td>
+<td>com.BEd.Tests.EligibilityCriteriaForGeneral@58ebfd03</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSC.BtechWithLessThan50Percentage()'><b>BtechWithLessThan50Percentage</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSC</td>
+<td></td>
+<td>55</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSC@5b07730f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForST.BtechWithLessThan50Percentage()'><b>BtechWithLessThan50Percentage</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForST</td>
+<td></td>
+<td>55</td>
+<td>com.BEd.Tests.EligibilityCriteriaForST@1fdfafd2</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSEBC.BtechWithLessThan50Percentage()'><b>BtechWithLessThan50Percentage</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSEBC</td>
+<td></td>
+<td>55</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSEBC@a4b2d8f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForGeneral.BtechWithLessThan55Percentage()'><b>BtechWithLessThan55Percentage</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForGeneral</td>
+<td></td>
+<td>55</td>
+<td>com.BEd.Tests.EligibilityCriteriaForGeneral@58ebfd03</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForPH.BtechWithLessThan55Percentage()'><b>BtechWithLessThan55Percentage</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForPH</td>
+<td></td>
+<td>59</td>
+<td>com.BEd.Tests.EligibilityCriteriaForPH@dcfda20</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSC.BtechWithMoreThan50Percentage()'><b>BtechWithMoreThan50Percentage</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSC</td>
+<td></td>
+<td>54</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSC@5b07730f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForST.BtechWithMoreThan50Percentage()'><b>BtechWithMoreThan50Percentage</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForST</td>
+<td></td>
+<td>54</td>
+<td>com.BEd.Tests.EligibilityCriteriaForST@1fdfafd2</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSEBC.BtechWithMoreThan50Percentage()'><b>BtechWithMoreThan50Percentage</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSEBC</td>
+<td></td>
+<td>54</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSEBC@a4b2d8f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForPH.BtechWithMoreThan50Percentage()'><b>BtechWithMoreThan50Percentage</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForPH</td>
+<td></td>
+<td>58</td>
+<td>com.BEd.Tests.EligibilityCriteriaForPH@dcfda20</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForGeneral.BtechWithMoreThan55Percentage()'><b>BtechWithMoreThan55Percentage</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForGeneral</td>
+<td></td>
+<td>54</td>
+<td>com.BEd.Tests.EligibilityCriteriaForGeneral@58ebfd03</td></tr>
+<tr>
+<td title='com.BEd.Tests.CofirmFunctionality.CancellationofFinalSubmission()'><b>CancellationofFinalSubmission</b><br>Test class: com.BEd.Tests.CofirmFunctionality</td>
+<td></td>
+<td>3</td>
+<td>com.BEd.Tests.CofirmFunctionality@6f2cb653</td></tr>
+<tr>
+<td title='com.BEd.Tests.CofirmFunctionality.ConfirmationBeforeFinalSubmission()'><b>ConfirmationBeforeFinalSubmission</b><br>Test class: com.BEd.Tests.CofirmFunctionality</td>
+<td></td>
+<td>8</td>
+<td>com.BEd.Tests.CofirmFunctionality@6f2cb653</td></tr>
+<tr>
+<td title='com.BEd.Tests.MobileNoComparison.DifferentRegisteredMobileNoAlternateMobileNo()'><b>DifferentRegisteredMobileNoAlternateMobileNo</b><br>Test class: com.BEd.Tests.MobileNoComparison</td>
+<td></td>
+<td>54</td>
+<td>com.BEd.Tests.MobileNoComparison@fd8294b</td></tr>
+<tr>
+<td title='com.BEd.Tests.ArtsStreamValidation.DisabilityOfEnglishWithArtsEnglishHonours()'><b>DisabilityOfEnglishWithArtsEnglishHonours</b><br>Test class: com.BEd.Tests.ArtsStreamValidation</td>
+<td></td>
+<td>29</td>
+<td>com.BEd.Tests.ArtsStreamValidation@75c9e76b</td></tr>
+<tr>
+<td title='com.BEd.Tests.ArtsStreamValidation.DisabilityOfOdiaWithArtsOdiaHonours()'><b>DisabilityOfOdiaWithArtsOdiaHonours</b><br>Test class: com.BEd.Tests.ArtsStreamValidation</td>
+<td></td>
+<td>29</td>
+<td>com.BEd.Tests.ArtsStreamValidation@75c9e76b</td></tr>
+<tr>
+<td title='com.BEd.Tests.ScienceStreamValidation.DisabilityOfPCMWithScience()'><b>DisabilityOfPCMWithScience</b><br>Test class: com.BEd.Tests.ScienceStreamValidation</td>
+<td></td>
+<td>29</td>
+<td>com.BEd.Tests.ScienceStreamValidation@6f8f9349</td></tr>
+<tr>
+<td title='com.BEd.Tests.ScienceStreamValidation.DuplicateSubject()'><b>DuplicateSubject</b><br>Test class: com.BEd.Tests.ScienceStreamValidation</td>
+<td></td>
+<td>40</td>
+<td>com.BEd.Tests.ScienceStreamValidation@6f8f9349</td></tr>
+<tr>
+<td title='com.BEd.Tests.ArtsStreamValidation.DuplicateSubject()'><b>DuplicateSubject</b><br>Test class: com.BEd.Tests.ArtsStreamValidation</td>
+<td></td>
+<td>38</td>
+<td>com.BEd.Tests.ArtsStreamValidation@75c9e76b</td></tr>
+<tr>
+<td title='com.BEd.Tests.ExServiceman.ExServicemanCertified()'><b>ExServicemanCertified</b><br>Test class: com.BEd.Tests.ExServiceman</td>
+<td></td>
+<td>54</td>
+<td>com.BEd.Tests.ExServiceman@4879f0f2</td></tr>
+<tr>
+<td title='com.BEd.Tests.ExServiceman.ExServicemanNotCertified()'><b>ExServicemanNotCertified</b><br>Test class: com.BEd.Tests.ExServiceman</td>
+<td></td>
+<td>27</td>
+<td>com.BEd.Tests.ExServiceman@4879f0f2</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForFemaleApplicants.FemaleApplicantBornAfterAgeAsOn()'><b>FemaleApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForFemaleApplicants</td>
+<td></td>
+<td>62</td>
+<td>com.BEd.Tests.AgeCriteriaForFemaleApplicants@f73dcd6</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForFemaleApplicants.FemaleApplicantBornBeforeAgeAsOn()'><b>FemaleApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForFemaleApplicants</td>
+<td></td>
+<td>21</td>
+<td>com.BEd.Tests.AgeCriteriaForFemaleApplicants@f73dcd6</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForFemaleApplicants.FemaleApplicantBornOnAgeAsOn()'><b>FemaleApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForFemaleApplicants</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.AgeCriteriaForFemaleApplicants@f73dcd6</td></tr>
+<tr>
+<td title='com.BEd.Tests.MarksComparison.GraduationMaximumMarkcannotbelessthanMarkObtained()'><b>GraduationMaximumMarkcannotbelessthanMarkObtained</b><br>Test class: com.BEd.Tests.MarksComparison</td>
+<td></td>
+<td>54</td>
+<td>com.BEd.Tests.MarksComparison@7446d8d5</td></tr>
+<tr>
+<td title='com.BEd.Tests.GreenCard.GreenCardWithCertificate()'><b>GreenCardWithCertificate</b><br>Test class: com.BEd.Tests.GreenCard</td>
+<td></td>
+<td>54</td>
+<td>com.BEd.Tests.GreenCard@47db5fa5</td></tr>
+<tr>
+<td title='com.BEd.Tests.GreenCard.GreenCardWithoutCertificate()'><b>GreenCardWithoutCertificate</b><br>Test class: com.BEd.Tests.GreenCard</td>
+<td></td>
+<td>28</td>
+<td>com.BEd.Tests.GreenCard@47db5fa5</td></tr>
+<tr>
+<td title='com.BEd.Tests.MobileNoComparison.IdenticalRegisteredMobileNoAlternateMobileNo()'><b>IdenticalRegisteredMobileNoAlternateMobileNo</b><br>Test class: com.BEd.Tests.MobileNoComparison</td>
+<td></td>
+<td>29</td>
+<td>com.BEd.Tests.MobileNoComparison@fd8294b</td></tr>
+<tr>
+<td title='com.BEd.Tests.ImageUpload.ImageUploadWithInValidData()'><b>ImageUploadWithInValidData</b><br>Test class: com.BEd.Tests.ImageUpload</td>
+<td></td>
+<td>1</td>
+<td>com.BEd.Tests.ImageUpload@590c73d3</td></tr>
+<tr>
+<td title='com.BEd.Tests.ImageUpload.ImageUploadWithValidData()'><b>ImageUploadWithValidData</b><br>Test class: com.BEd.Tests.ImageUpload</td>
+<td></td>
+<td>1</td>
+<td>com.BEd.Tests.ImageUpload@590c73d3</td></tr>
+<tr>
+<td title='com.BEd.Tests.KandhamalQuota.KandhamalQuotaForGeneralCandidates()'><b>KandhamalQuotaForGeneralCandidates</b><br>Test class: com.BEd.Tests.KandhamalQuota</td>
+<td></td>
+<td>27</td>
+<td>com.BEd.Tests.KandhamalQuota@1080b026</td></tr>
+<tr>
+<td title='com.BEd.Tests.KandhamalQuota.KandhamalQuotaForKandhamalNonResidingSCCandidates()'><b>KandhamalQuotaForKandhamalNonResidingSCCandidates</b><br>Test class: com.BEd.Tests.KandhamalQuota</td>
+<td></td>
+<td>30</td>
+<td>com.BEd.Tests.KandhamalQuota@1080b026</td></tr>
+<tr>
+<td title='com.BEd.Tests.KandhamalQuota.KandhamalQuotaForKandhamalNonResidingSTCandidates()'><b>KandhamalQuotaForKandhamalNonResidingSTCandidates</b><br>Test class: com.BEd.Tests.KandhamalQuota</td>
+<td></td>
+<td>30</td>
+<td>com.BEd.Tests.KandhamalQuota@1080b026</td></tr>
+<tr>
+<td title='com.BEd.Tests.KandhamalQuota.KandhamalQuotaForKandhamalResidingSCCandidates()'><b>KandhamalQuotaForKandhamalResidingSCCandidates</b><br>Test class: com.BEd.Tests.KandhamalQuota</td>
+<td></td>
+<td>52</td>
+<td>com.BEd.Tests.KandhamalQuota@1080b026</td></tr>
+<tr>
+<td title='com.BEd.Tests.KandhamalQuota.KandhamalQuotaForKandhamalResidingSTCandidates()'><b>KandhamalQuotaForKandhamalResidingSTCandidates</b><br>Test class: com.BEd.Tests.KandhamalQuota</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.KandhamalQuota@1080b026</td></tr>
+<tr>
+<td title='com.BEd.Tests.KandhamalQuota.KandhamalQuotaForOOTCandidates()'><b>KandhamalQuotaForOOTCandidates</b><br>Test class: com.BEd.Tests.KandhamalQuota</td>
+<td></td>
+<td>27</td>
+<td>com.BEd.Tests.KandhamalQuota@1080b026</td></tr>
+<tr>
+<td title='com.BEd.Tests.KandhamalQuota.KandhamalQuotaForSEBCCandidates()'><b>KandhamalQuotaForSEBCCandidates</b><br>Test class: com.BEd.Tests.KandhamalQuota</td>
+<td></td>
+<td>27</td>
+<td>com.BEd.Tests.KandhamalQuota@1080b026</td></tr>
+<tr>
+<td title='com.BEd.Tests.ArtsStreamValidation.LanguageSubject()'><b>LanguageSubject</b><br>Test class: com.BEd.Tests.ArtsStreamValidation</td>
+<td></td>
+<td>53</td>
+<td>com.BEd.Tests.ArtsStreamValidation@75c9e76b</td></tr>
+<tr>
+<td title='com.BEd.Tests.LocomotorDisabilityValidations.LocomotorDisabilityBetween40To100Percentage()'><b>LocomotorDisabilityBetween40To100Percentage</b><br>Test class: com.BEd.Tests.LocomotorDisabilityValidations</td>
+<td></td>
+<td>65</td>
+<td>com.BEd.Tests.LocomotorDisabilityValidations@41813449</td></tr>
+<tr>
+<td title='com.BEd.Tests.LocomotorDisabilityValidations.LocomotorDisabilityWithLessThan40Percentage()'><b>LocomotorDisabilityWithLessThan40Percentage</b><br>Test class: com.BEd.Tests.LocomotorDisabilityValidations</td>
+<td></td>
+<td>22</td>
+<td>com.BEd.Tests.LocomotorDisabilityValidations@41813449</td></tr>
+<tr>
+<td title='com.BEd.Tests.LocomotorDisabilityValidations.LocomotorDisabilityWithMoreThan100Percentage()'><b>LocomotorDisabilityWithMoreThan100Percentage</b><br>Test class: com.BEd.Tests.LocomotorDisabilityValidations</td>
+<td></td>
+<td>30</td>
+<td>com.BEd.Tests.LocomotorDisabilityValidations@41813449</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFWithDifferentBoards.Login()'><b>Login</b><br>Test class: com.BEd.Tests.ApplyingCAFWithDifferentBoards</td>
+<td></td>
+<td>23</td>
+<td>com.BEd.Tests.ApplyingCAFWithDifferentBoards@2e11485</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFWithDiffernetExamType.Login()'><b>Login</b><br>Test class: com.BEd.Tests.ApplyingCAFWithDiffernetExamType</td>
+<td></td>
+<td>16</td>
+<td>com.BEd.Tests.ApplyingCAFWithDiffernetExamType@60dce7ea</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFWithDiffGender.Login()'><b>Login</b><br>Test class: com.BEd.Tests.ApplyingCAFWithDiffGender</td>
+<td></td>
+<td>16</td>
+<td>com.BEd.Tests.ApplyingCAFWithDiffGender@662f5666</td></tr>
+<tr>
+<td title='com.BEd.Tests.MobileNoComparison.Login()'><b>Login</b><br>Test class: com.BEd.Tests.MobileNoComparison</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.MobileNoComparison@fd8294b</td></tr>
+<tr>
+<td title='com.BEd.Tests.ReadonlyMobileNo.Login()'><b>Login</b><br>Test class: com.BEd.Tests.ReadonlyMobileNo</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.ReadonlyMobileNo@5974109</td></tr>
+<tr>
+<td title='com.BEd.Tests.ReadOnlyEmailId.Login()'><b>Login</b><br>Test class: com.BEd.Tests.ReadOnlyEmailId</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.ReadOnlyEmailId@27305e6</td></tr>
+<tr>
+<td title='com.BEd.Tests.AadhaarValidations.Login()'><b>Login</b><br>Test class: com.BEd.Tests.AadhaarValidations</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.AadhaarValidations@1ef3efa8</td></tr>
+<tr>
+<td title='com.BEd.Tests.OdiaCriteria.Login()'><b>Login</b><br>Test class: com.BEd.Tests.OdiaCriteria</td>
+<td></td>
+<td>16</td>
+<td>com.BEd.Tests.OdiaCriteria@502f1f4c</td></tr>
+<tr>
+<td title='com.BEd.Tests.ScienceStreamValidation.Login()'><b>Login</b><br>Test class: com.BEd.Tests.ScienceStreamValidation</td>
+<td></td>
+<td>18</td>
+<td>com.BEd.Tests.ScienceStreamValidation@6f8f9349</td></tr>
+<tr>
+<td title='com.BEd.Tests.ArtsStreamValidation.Login()'><b>Login</b><br>Test class: com.BEd.Tests.ArtsStreamValidation</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.ArtsStreamValidation@75c9e76b</td></tr>
+<tr>
+<td title='com.BEd.Tests.MarksComparison.Login()'><b>Login</b><br>Test class: com.BEd.Tests.MarksComparison</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.MarksComparison@7446d8d5</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisons10th12th.Login()'><b>Login</b><br>Test class: com.BEd.Tests.YOPComparisons10th12th</td>
+<td></td>
+<td>16</td>
+<td>com.BEd.Tests.YOPComparisons10th12th@5c3b6c6e</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisons12thGraduation.Login()'><b>Login</b><br>Test class: com.BEd.Tests.YOPComparisons12thGraduation</td>
+<td></td>
+<td>16</td>
+<td>com.BEd.Tests.YOPComparisons12thGraduation@4fbda97b</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisonsGraduationPG.Login()'><b>Login</b><br>Test class: com.BEd.Tests.YOPComparisonsGraduationPG</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.YOPComparisonsGraduationPG@75f5fd58</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFByEachGraduates.Login()'><b>Login</b><br>Test class: com.BEd.Tests.ApplyingCAFByEachGraduates</td>
+<td></td>
+<td>15</td>
+<td>com.BEd.Tests.ApplyingCAFByEachGraduates@37b70343</td></tr>
+<tr>
+<td title='com.BEd.Tests.ApplyingCAFByEachAppearingGraduates.Login()'><b>Login</b><br>Test class: com.BEd.Tests.ApplyingCAFByEachAppearingGraduates</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.ApplyingCAFByEachAppearingGraduates@306851c7</td></tr>
+<tr>
+<td title='com.BEd.Tests.OOTCriteria.Login()'><b>Login</b><br>Test class: com.BEd.Tests.OOTCriteria</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.OOTCriteria@12bcd0c0</td></tr>
+<tr>
+<td title='com.BEd.Tests.ExServiceman.Login()'><b>Login</b><br>Test class: com.BEd.Tests.ExServiceman</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.ExServiceman@4879f0f2</td></tr>
+<tr>
+<td title='com.BEd.Tests.GreenCard.Login()'><b>Login</b><br>Test class: com.BEd.Tests.GreenCard</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.GreenCard@47db5fa5</td></tr>
+<tr>
+<td title='com.BEd.Tests.PHCategoryValidations.Login()'><b>Login</b><br>Test class: com.BEd.Tests.PHCategoryValidations</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.PHCategoryValidations@354fc8f0</td></tr>
+<tr>
+<td title='com.BEd.Tests.LocomotorDisabilityValidations.Login()'><b>Login</b><br>Test class: com.BEd.Tests.LocomotorDisabilityValidations</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.LocomotorDisabilityValidations@41813449</td></tr>
+<tr>
+<td title='com.BEd.Tests.StateQuota.Login()'><b>Login</b><br>Test class: com.BEd.Tests.StateQuota</td>
+<td></td>
+<td>16</td>
+<td>com.BEd.Tests.StateQuota@4678a2eb</td></tr>
+<tr>
+<td title='com.BEd.Tests.StateQuotaForOOT.Login()'><b>Login</b><br>Test class: com.BEd.Tests.StateQuotaForOOT</td>
+<td></td>
+<td>16</td>
+<td>com.BEd.Tests.StateQuotaForOOT@5b43fbf6</td></tr>
+<tr>
+<td title='com.BEd.Tests.KandhamalQuota.Login()'><b>Login</b><br>Test class: com.BEd.Tests.KandhamalQuota</td>
+<td></td>
+<td>16</td>
+<td>com.BEd.Tests.KandhamalQuota@1080b026</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForGeneral.Login()'><b>Login</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForGeneral</td>
+<td></td>
+<td>15</td>
+<td>com.BEd.Tests.EligibilityCriteriaForGeneral@58ebfd03</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSC.Login()'><b>Login</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSC</td>
+<td></td>
+<td>18</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSC@5b07730f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForST.Login()'><b>Login</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForST</td>
+<td></td>
+<td>15</td>
+<td>com.BEd.Tests.EligibilityCriteriaForST@1fdfafd2</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSEBC.Login()'><b>Login</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSEBC</td>
+<td></td>
+<td>18</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSEBC@a4b2d8f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForPH.Login()'><b>Login</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForPH</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.EligibilityCriteriaForPH@dcfda20</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForMaleApplicant.Login()'><b>Login</b><br>Test class: com.BEd.Tests.AgeCriteriaForMaleApplicant</td>
+<td></td>
+<td>18</td>
+<td>com.BEd.Tests.AgeCriteriaForMaleApplicant@6d304f9d</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForFemaleApplicants.Login()'><b>Login</b><br>Test class: com.BEd.Tests.AgeCriteriaForFemaleApplicants</td>
+<td></td>
+<td>18</td>
+<td>com.BEd.Tests.AgeCriteriaForFemaleApplicants@f73dcd6</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForTransgenderApplicants.Login()'><b>Login</b><br>Test class: com.BEd.Tests.AgeCriteriaForTransgenderApplicants</td>
+<td></td>
+<td>15</td>
+<td>com.BEd.Tests.AgeCriteriaForTransgenderApplicants@5c87bfe2</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSCApplicants.Login()'><b>Login</b><br>Test class: com.BEd.Tests.AgeCriteriaForSCApplicants</td>
+<td></td>
+<td>18</td>
+<td>com.BEd.Tests.AgeCriteriaForSCApplicants@2fea7088</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSTApplicants.Login()'><b>Login</b><br>Test class: com.BEd.Tests.AgeCriteriaForSTApplicants</td>
+<td></td>
+<td>16</td>
+<td>com.BEd.Tests.AgeCriteriaForSTApplicants@40499e4f</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants.Login()'><b>Login</b><br>Test class: com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants</td>
+<td></td>
+<td>15</td>
+<td>com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants@51cd7ffc</td></tr>
+<tr>
+<td title='com.BEd.Tests.SubmissionOfCAF.Login()'><b>Login</b><br>Test class: com.BEd.Tests.SubmissionOfCAF</td>
+<td></td>
+<td>17</td>
+<td>com.BEd.Tests.SubmissionOfCAF@30d4b288</td></tr>
+<tr>
+<td title='com.BEd.Tests.SubmissionofCAFBySameApplicantAgain.Login()'><b>Login</b><br>Test class: com.BEd.Tests.SubmissionofCAFBySameApplicantAgain</td>
+<td></td>
+<td>11</td>
+<td>com.BEd.Tests.SubmissionofCAFBySameApplicantAgain@4cc6fa2a</td></tr>
+<tr>
+<td title='com.BEd.Tests.SubmissionofCAFWithDuplicateData.Login()'><b>Login</b><br>Test class: com.BEd.Tests.SubmissionofCAFWithDuplicateData</td>
+<td></td>
+<td>16</td>
+<td>com.BEd.Tests.SubmissionofCAFWithDuplicateData@40f1be1b</td></tr>
+<tr>
+<td title='com.BEd.Tests.SubmissionofCAFWithInvalidData.Login()'><b>Login</b><br>Test class: com.BEd.Tests.SubmissionofCAFWithInvalidData</td>
+<td></td>
+<td>20</td>
+<td>com.BEd.Tests.SubmissionofCAFWithInvalidData@7a791b66</td></tr>
+<tr>
+<td title='com.BEd.Tests.CofirmFunctionality.Login()'><b>Login</b><br>Test class: com.BEd.Tests.CofirmFunctionality</td>
+<td></td>
+<td>16</td>
+<td>com.BEd.Tests.CofirmFunctionality@6f2cb653</td></tr>
+<tr>
+<td title='com.BEd.Tests.BacktoModifyfunctionality.Login()'><b>Login</b><br>Test class: com.BEd.Tests.BacktoModifyfunctionality</td>
+<td></td>
+<td>15</td>
+<td>com.BEd.Tests.BacktoModifyfunctionality@14c01636</td></tr>
+<tr>
+<td title='com.BEd.Tests.ImageUpload.Login()'><b>Login</b><br>Test class: com.BEd.Tests.ImageUpload</td>
+<td></td>
+<td>13</td>
+<td>com.BEd.Tests.ImageUpload@590c73d3</td></tr>
+<tr>
+<td title='com.BEd.Tests.ExServiceman.MarriedDaughterOfExServiceman()'><b>MarriedDaughterOfExServiceman</b><br>Test class: com.BEd.Tests.ExServiceman</td>
+<td></td>
+<td>27</td>
+<td>com.BEd.Tests.ExServiceman@4879f0f2</td></tr>
+<tr>
+<td title='com.BEd.Tests.ReadonlyMobileNo.MobileNoDisability()'><b>MobileNoDisability</b><br>Test class: com.BEd.Tests.ReadonlyMobileNo</td>
+<td></td>
+<td>1</td>
+<td>com.BEd.Tests.ReadonlyMobileNo@5974109</td></tr>
+<tr>
+<td title='com.BEd.Tests.AadhaarValidations.NonAcceptanceofDuplicateAadhaar()'><b>NonAcceptanceofDuplicateAadhaar</b><br>Test class: com.BEd.Tests.AadhaarValidations</td>
+<td></td>
+<td>68</td>
+<td>com.BEd.Tests.AadhaarValidations@1ef3efa8</td></tr>
+<tr>
+<td title='com.BEd.Tests.MarksComparison.ObtainedMarkIsEqualToMaxMark()'><b>ObtainedMarkIsEqualToMaxMark</b><br>Test class: com.BEd.Tests.MarksComparison</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.MarksComparison@7446d8d5</td></tr>
+<tr>
+<td title='com.BEd.Tests.MarksComparison.ObtainedMarkIsGreaterThanMaxMark()'><b>ObtainedMarkIsGreaterThanMaxMark</b><br>Test class: com.BEd.Tests.MarksComparison</td>
+<td></td>
+<td>41</td>
+<td>com.BEd.Tests.MarksComparison@7446d8d5</td></tr>
+<tr>
+<td title='com.BEd.Tests.MarksComparison.ObtainedMarkIslessthanMaxMark()'><b>ObtainedMarkIslessthanMaxMark</b><br>Test class: com.BEd.Tests.MarksComparison</td>
+<td></td>
+<td>52</td>
+<td>com.BEd.Tests.MarksComparison@7446d8d5</td></tr>
+<tr>
+<td title='com.BEd.Tests.OdiaCriteria.OdiaNotStudied()'><b>OdiaNotStudied</b><br>Test class: com.BEd.Tests.OdiaCriteria</td>
+<td></td>
+<td>26</td>
+<td>com.BEd.Tests.OdiaCriteria@502f1f4c</td></tr>
+<tr>
+<td title='com.BEd.Tests.OdiaCriteria.OdiaStudied()'><b>OdiaStudied</b><br>Test class: com.BEd.Tests.OdiaCriteria</td>
+<td></td>
+<td>52</td>
+<td>com.BEd.Tests.OdiaCriteria@502f1f4c</td></tr>
+<tr>
+<td title='com.BEd.Tests.MarksComparison.PGMaximumMarkcannotbelessthanMarkObtained()'><b>PGMaximumMarkcannotbelessthanMarkObtained</b><br>Test class: com.BEd.Tests.MarksComparison</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.MarksComparison@7446d8d5</td></tr>
+<tr>
+<td title='com.BEd.Tests.PHCategoryValidations.PHCategoryBetween40To100Percentage()'><b>PHCategoryBetween40To100Percentage</b><br>Test class: com.BEd.Tests.PHCategoryValidations</td>
+<td></td>
+<td>64</td>
+<td>com.BEd.Tests.PHCategoryValidations@354fc8f0</td></tr>
+<tr>
+<td title='com.BEd.Tests.PHCategoryValidations.PHCategoryWithLessThan40Percentage()'><b>PHCategoryWithLessThan40Percentage</b><br>Test class: com.BEd.Tests.PHCategoryValidations</td>
+<td></td>
+<td>22</td>
+<td>com.BEd.Tests.PHCategoryValidations@354fc8f0</td></tr>
+<tr>
+<td title='com.BEd.Tests.PHCategoryValidations.PHCategoryWithMoreThan100Percentage()'><b>PHCategoryWithMoreThan100Percentage</b><br>Test class: com.BEd.Tests.PHCategoryValidations</td>
+<td></td>
+<td>30</td>
+<td>com.BEd.Tests.PHCategoryValidations@354fc8f0</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForFemaleApplicants.PWDFemaleApplicantBornAfterAgeAsOn()'><b>PWDFemaleApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForFemaleApplicants</td>
+<td></td>
+<td>67</td>
+<td>com.BEd.Tests.AgeCriteriaForFemaleApplicants@f73dcd6</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForFemaleApplicants.PWDFemaleApplicantBornBeforeAgeAsOn()'><b>PWDFemaleApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForFemaleApplicants</td>
+<td></td>
+<td>25</td>
+<td>com.BEd.Tests.AgeCriteriaForFemaleApplicants@f73dcd6</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForFemaleApplicants.PWDFemaleApplicantBornOnAgeAsOn()'><b>PWDFemaleApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForFemaleApplicants</td>
+<td></td>
+<td>66</td>
+<td>com.BEd.Tests.AgeCriteriaForFemaleApplicants@f73dcd6</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForMaleApplicant.PWDMaleApplicantBornAfterAgeAsOn()'><b>PWDMaleApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForMaleApplicant</td>
+<td></td>
+<td>66</td>
+<td>com.BEd.Tests.AgeCriteriaForMaleApplicant@6d304f9d</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForMaleApplicant.PWDMaleApplicantBornBeforeAgeAsOn()'><b>PWDMaleApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForMaleApplicant</td>
+<td></td>
+<td>25</td>
+<td>com.BEd.Tests.AgeCriteriaForMaleApplicant@6d304f9d</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForMaleApplicant.PWDMaleApplicantBornOnAgeAsOn()'><b>PWDMaleApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForMaleApplicant</td>
+<td></td>
+<td>67</td>
+<td>com.BEd.Tests.AgeCriteriaForMaleApplicant@6d304f9d</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSCApplicants.PWDSCApplicantBornAfterAgeAsOn()'><b>PWDSCApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSCApplicants</td>
+<td></td>
+<td>66</td>
+<td>com.BEd.Tests.AgeCriteriaForSCApplicants@2fea7088</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSCApplicants.PWDSCApplicantBornBeforeAgeAsOn()'><b>PWDSCApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSCApplicants</td>
+<td></td>
+<td>25</td>
+<td>com.BEd.Tests.AgeCriteriaForSCApplicants@2fea7088</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSCApplicants.PWDSCApplicantBornOnAgeAsOn()'><b>PWDSCApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSCApplicants</td>
+<td></td>
+<td>66</td>
+<td>com.BEd.Tests.AgeCriteriaForSCApplicants@2fea7088</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants.PWDSEBCApplicantBornAfterAgeAsOn()'><b>PWDSEBCApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants</td>
+<td></td>
+<td>66</td>
+<td>com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants@51cd7ffc</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants.PWDSEBCApplicantBornBeforeAgeAsOn()'><b>PWDSEBCApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants</td>
+<td></td>
+<td>25</td>
+<td>com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants@51cd7ffc</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants.PWDSEBCApplicantBornOnAgeAsOn()'><b>PWDSEBCApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants</td>
+<td></td>
+<td>66</td>
+<td>com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants@51cd7ffc</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSTApplicants.PWDSTApplicantBornAfterAgeAsOn()'><b>PWDSTApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSTApplicants</td>
+<td></td>
+<td>66</td>
+<td>com.BEd.Tests.AgeCriteriaForSTApplicants@40499e4f</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSTApplicants.PWDSTApplicantBornBeforeAgeAsOn()'><b>PWDSTApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSTApplicants</td>
+<td></td>
+<td>25</td>
+<td>com.BEd.Tests.AgeCriteriaForSTApplicants@40499e4f</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSTApplicants.PWDSTApplicantBornOnAgeAsOn()'><b>PWDSTApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSTApplicants</td>
+<td></td>
+<td>66</td>
+<td>com.BEd.Tests.AgeCriteriaForSTApplicants@40499e4f</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForTransgenderApplicants.PWDTransgenderApplicantBornAfterAgeAsOn()'><b>PWDTransgenderApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForTransgenderApplicants</td>
+<td></td>
+<td>66</td>
+<td>com.BEd.Tests.AgeCriteriaForTransgenderApplicants@5c87bfe2</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForTransgenderApplicants.PWDTransgenderApplicantBornBeforeAgeAsOn()'><b>PWDTransgenderApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForTransgenderApplicants</td>
+<td></td>
+<td>25</td>
+<td>com.BEd.Tests.AgeCriteriaForTransgenderApplicants@5c87bfe2</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForTransgenderApplicants.PWDTransgenderApplicantBornOnAgeAsOn()'><b>PWDTransgenderApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForTransgenderApplicants</td>
+<td></td>
+<td>66</td>
+<td>com.BEd.Tests.AgeCriteriaForTransgenderApplicants@5c87bfe2</td></tr>
+<tr>
+<td title='com.BEd.Tests.ReadOnlyEmailId.PopulationAndDisabilityofEmail()'><b>PopulationAndDisabilityofEmail</b><br>Test class: com.BEd.Tests.ReadOnlyEmailId</td>
+<td></td>
+<td>1</td>
+<td>com.BEd.Tests.ReadOnlyEmailId@27305e6</td></tr>
+<tr>
+<td title='com.BEd.Tests.ScienceStreamValidation.PopulationOfBtech()'><b>PopulationOfBtech</b><br>Test class: com.BEd.Tests.ScienceStreamValidation</td>
+<td></td>
+<td>38</td>
+<td>com.BEd.Tests.ScienceStreamValidation@6f8f9349</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSCApplicants.SCApplicantBornAfterAgeAsOn()'><b>SCApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSCApplicants</td>
+<td></td>
+<td>61</td>
+<td>com.BEd.Tests.AgeCriteriaForSCApplicants@2fea7088</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSCApplicants.SCApplicantBornBeforeAgeAsOn()'><b>SCApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSCApplicants</td>
+<td></td>
+<td>21</td>
+<td>com.BEd.Tests.AgeCriteriaForSCApplicants@2fea7088</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSCApplicants.SCApplicantBornOnAgeAsOn()'><b>SCApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSCApplicants</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.AgeCriteriaForSCApplicants@2fea7088</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants.SEBCApplicantBornAfterAgeAsOn()'><b>SEBCApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants</td>
+<td></td>
+<td>61</td>
+<td>com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants@51cd7ffc</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants.SEBCApplicantBornBeforeAgeAsOn()'><b>SEBCApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants</td>
+<td></td>
+<td>21</td>
+<td>com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants@51cd7ffc</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants.SEBCApplicantBornOnAgeAsOn()'><b>SEBCApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.AgeCriteriaForSEBCMaleApplicants@51cd7ffc</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSTApplicants.STApplicantBornAfterAgeAsOn()'><b>STApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSTApplicants</td>
+<td></td>
+<td>61</td>
+<td>com.BEd.Tests.AgeCriteriaForSTApplicants@40499e4f</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSTApplicants.STApplicantBornBeforeAgeAsOn()'><b>STApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSTApplicants</td>
+<td></td>
+<td>21</td>
+<td>com.BEd.Tests.AgeCriteriaForSTApplicants@40499e4f</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForSTApplicants.STApplicantBornOnAgeAsOn()'><b>STApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForSTApplicants</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.AgeCriteriaForSTApplicants@40499e4f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSC.ScienceWithLessThan45PercentageInPG()'><b>ScienceWithLessThan45PercentageInPG</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSC</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSC@5b07730f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForST.ScienceWithLessThan45PercentageInPG()'><b>ScienceWithLessThan45PercentageInPG</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForST</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.EligibilityCriteriaForST@1fdfafd2</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSEBC.ScienceWithLessThan45PercentageInPG()'><b>ScienceWithLessThan45PercentageInPG</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSEBC</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSEBC@a4b2d8f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForPH.ScienceWithLessThan45PercentageInPG()'><b>ScienceWithLessThan45PercentageInPG</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForPH</td>
+<td></td>
+<td>64</td>
+<td>com.BEd.Tests.EligibilityCriteriaForPH@dcfda20</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForGeneral.ScienceWithLessThan50PercentageInPG()'><b>ScienceWithLessThan50PercentageInPG</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForGeneral</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.EligibilityCriteriaForGeneral@58ebfd03</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSC.ScienceWithMoreThan45PercentageInPG()'><b>ScienceWithMoreThan45PercentageInPG</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSC</td>
+<td></td>
+<td>59</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSC@5b07730f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForST.ScienceWithMoreThan45PercentageInPG()'><b>ScienceWithMoreThan45PercentageInPG</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForST</td>
+<td></td>
+<td>59</td>
+<td>com.BEd.Tests.EligibilityCriteriaForST@1fdfafd2</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForSEBC.ScienceWithMoreThan45PercentageInPG()'><b>ScienceWithMoreThan45PercentageInPG</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForSEBC</td>
+<td></td>
+<td>59</td>
+<td>com.BEd.Tests.EligibilityCriteriaForSEBC@a4b2d8f</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForPH.ScienceWithMoreThan45PercentageInPG()'><b>ScienceWithMoreThan45PercentageInPG</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForPH</td>
+<td></td>
+<td>63</td>
+<td>com.BEd.Tests.EligibilityCriteriaForPH@dcfda20</td></tr>
+<tr>
+<td title='com.BEd.Tests.EligibilityCriteriaForGeneral.ScienceWithMoreThan50PercentageInPG()'><b>ScienceWithMoreThan50PercentageInPG</b><br>Test class: com.BEd.Tests.EligibilityCriteriaForGeneral</td>
+<td></td>
+<td>59</td>
+<td>com.BEd.Tests.EligibilityCriteriaForGeneral@58ebfd03</td></tr>
+<tr>
+<td title='com.BEd.Tests.StateQuotaForOOT.StateQuotaForOOTCandidatesWithOdia()'><b>StateQuotaForOOTCandidatesWithOdia</b><br>Test class: com.BEd.Tests.StateQuotaForOOT</td>
+<td></td>
+<td>86</td>
+<td>com.BEd.Tests.StateQuotaForOOT@5b43fbf6</td></tr>
+<tr>
+<td title='com.BEd.Tests.StateQuotaForOOT.StateQuotaForOOTCandidatesWithoutOdia()'><b>StateQuotaForOOTCandidatesWithoutOdia</b><br>Test class: com.BEd.Tests.StateQuotaForOOT</td>
+<td></td>
+<td>59</td>
+<td>com.BEd.Tests.StateQuotaForOOT@5b43fbf6</td></tr>
+<tr>
+<td title='com.BEd.Tests.StateQuota.StateQuotaForOdishaResidingCandidatesWithOdia()'><b>StateQuotaForOdishaResidingCandidatesWithOdia</b><br>Test class: com.BEd.Tests.StateQuota</td>
+<td></td>
+<td>52</td>
+<td>com.BEd.Tests.StateQuota@4678a2eb</td></tr>
+<tr>
+<td title='com.BEd.Tests.StateQuota.StateQuotaForOdishaResidingCandidatesWithoutOdia()'><b>StateQuotaForOdishaResidingCandidatesWithoutOdia</b><br>Test class: com.BEd.Tests.StateQuota</td>
+<td></td>
+<td>27</td>
+<td>com.BEd.Tests.StateQuota@4678a2eb</td></tr>
+<tr>
+<td title='com.BEd.Tests.SubmissionofCAFBySameApplicantAgain.SubmissionBySameApplicant()'><b>SubmissionBySameApplicant</b><br>Test class: com.BEd.Tests.SubmissionofCAFBySameApplicantAgain</td>
+<td></td>
+<td>9</td>
+<td>com.BEd.Tests.SubmissionofCAFBySameApplicantAgain@4cc6fa2a</td></tr>
+<tr>
+<td title='com.BEd.Tests.SubmissionofCAFWithDuplicateData.SubmissionWithDuplicateRollNo()'><b>SubmissionWithDuplicateRollNo</b><br>Test class: com.BEd.Tests.SubmissionofCAFWithDuplicateData</td>
+<td></td>
+<td>54</td>
+<td>com.BEd.Tests.SubmissionofCAFWithDuplicateData@40f1be1b</td></tr>
+<tr>
+<td title='com.BEd.Tests.SubmissionofCAFWithInvalidData.SubmissionWithInvalidData()'><b>SubmissionWithInvalidData</b><br>Test class: com.BEd.Tests.SubmissionofCAFWithInvalidData</td>
+<td></td>
+<td>53</td>
+<td>com.BEd.Tests.SubmissionofCAFWithInvalidData@7a791b66</td></tr>
+<tr>
+<td title='com.BEd.Tests.SubmissionOfCAF.SuccessfulSubmissionofCAF()'><b>SuccessfulSubmissionofCAF</b><br>Test class: com.BEd.Tests.SubmissionOfCAF</td>
+<td></td>
+<td>53</td>
+<td>com.BEd.Tests.SubmissionOfCAF@30d4b288</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForTransgenderApplicants.TransgenderApplicantBornAfterAgeAsOn()'><b>TransgenderApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForTransgenderApplicants</td>
+<td></td>
+<td>61</td>
+<td>com.BEd.Tests.AgeCriteriaForTransgenderApplicants@5c87bfe2</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForTransgenderApplicants.TransgenderApplicantBornBeforeAgeAsOn()'><b>TransgenderApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForTransgenderApplicants</td>
+<td></td>
+<td>21</td>
+<td>com.BEd.Tests.AgeCriteriaForTransgenderApplicants@5c87bfe2</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForTransgenderApplicants.TransgenderApplicantBornOnAgeAsOn()'><b>TransgenderApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForTransgenderApplicants</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.AgeCriteriaForTransgenderApplicants@5c87bfe2</td></tr>
+<tr>
+<td title='com.BEd.Tests.MarksComparison.TwelthMaximumMarkcannotbelessthanMarkObtained()'><b>TwelthMaximumMarkcannotbelessthanMarkObtained</b><br>Test class: com.BEd.Tests.MarksComparison</td>
+<td></td>
+<td>48</td>
+<td>com.BEd.Tests.MarksComparison@7446d8d5</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForMaleApplicant.UnReservedMaleApplicantBornAfterAgeAsOn()'><b>UnReservedMaleApplicantBornAfterAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForMaleApplicant</td>
+<td></td>
+<td>61</td>
+<td>com.BEd.Tests.AgeCriteriaForMaleApplicant@6d304f9d</td></tr>
+<tr>
+<td title='com.BEd.Tests.ExServiceman.UnmarriedDaughterOfExServiceman()'><b>UnmarriedDaughterOfExServiceman</b><br>Test class: com.BEd.Tests.ExServiceman</td>
+<td></td>
+<td>62</td>
+<td>com.BEd.Tests.ExServiceman@4879f0f2</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForMaleApplicant.UnreservedMaleApplicantBornBeforeAgeAsOn()'><b>UnreservedMaleApplicantBornBeforeAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForMaleApplicant</td>
+<td></td>
+<td>21</td>
+<td>com.BEd.Tests.AgeCriteriaForMaleApplicant@6d304f9d</td></tr>
+<tr>
+<td title='com.BEd.Tests.AgeCriteriaForMaleApplicant.UnreservedMaleApplicantBornOnAgeAsOn()'><b>UnreservedMaleApplicantBornOnAgeAsOn</b><br>Test class: com.BEd.Tests.AgeCriteriaForMaleApplicant</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.AgeCriteriaForMaleApplicant@6d304f9d</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisons10th12th.YOPBetween10thAnd12thWithDiffLessThan2years()'><b>YOPBetween10thAnd12thWithDiffLessThan2years</b><br>Test class: com.BEd.Tests.YOPComparisons10th12th</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.YOPComparisons10th12th@5c3b6c6e</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisons10th12th.YOPBetween10thAnd12thWithIdenticalData()'><b>YOPBetween10thAnd12thWithIdenticalData</b><br>Test class: com.BEd.Tests.YOPComparisons10th12th</td>
+<td></td>
+<td>59</td>
+<td>com.BEd.Tests.YOPComparisons10th12th@5c3b6c6e</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisons10th12th.YOPBetween10thAnd12thWithInvalidData()'><b>YOPBetween10thAnd12thWithInvalidData</b><br>Test class: com.BEd.Tests.YOPComparisons10th12th</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.YOPComparisons10th12th@5c3b6c6e</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisons10th12th.YOPBetween10thAnd12thWithValidData()'><b>YOPBetween10thAnd12thWithValidData</b><br>Test class: com.BEd.Tests.YOPComparisons10th12th</td>
+<td></td>
+<td>53</td>
+<td>com.BEd.Tests.YOPComparisons10th12th@5c3b6c6e</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisons12thGraduation.YOPBetween12thAndGraduationWithDiffLessThan3years()'><b>YOPBetween12thAndGraduationWithDiffLessThan3years</b><br>Test class: com.BEd.Tests.YOPComparisons12thGraduation</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.YOPComparisons12thGraduation@4fbda97b</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisons12thGraduation.YOPBetween12thAndGraduationWithIdenticalData()'><b>YOPBetween12thAndGraduationWithIdenticalData</b><br>Test class: com.BEd.Tests.YOPComparisons12thGraduation</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.YOPComparisons12thGraduation@4fbda97b</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisons12thGraduation.YOPBetween12thAndGraduationWithInvalidData()'><b>YOPBetween12thAndGraduationWithInvalidData</b><br>Test class: com.BEd.Tests.YOPComparisons12thGraduation</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.YOPComparisons12thGraduation@4fbda97b</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisons12thGraduation.YOPBetween12thAndGraduationWithValidData()'><b>YOPBetween12thAndGraduationWithValidData</b><br>Test class: com.BEd.Tests.YOPComparisons12thGraduation</td>
+<td></td>
+<td>53</td>
+<td>com.BEd.Tests.YOPComparisons12thGraduation@4fbda97b</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisonsGraduationPG.YOPBetweenGraduationAndPGWithDiffLessThan3years()'><b>YOPBetweenGraduationAndPGWithDiffLessThan3years</b><br>Test class: com.BEd.Tests.YOPComparisonsGraduationPG</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.YOPComparisonsGraduationPG@75f5fd58</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisonsGraduationPG.YOPBetweenGraduationAndPGWithIdenticalData()'><b>YOPBetweenGraduationAndPGWithIdenticalData</b><br>Test class: com.BEd.Tests.YOPComparisonsGraduationPG</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.YOPComparisonsGraduationPG@75f5fd58</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisonsGraduationPG.YOPBetweenGraduationAndPGWithInvalidData()'><b>YOPBetweenGraduationAndPGWithInvalidData</b><br>Test class: com.BEd.Tests.YOPComparisonsGraduationPG</td>
+<td></td>
+<td>60</td>
+<td>com.BEd.Tests.YOPComparisonsGraduationPG@75f5fd58</td></tr>
+<tr>
+<td title='com.BEd.Tests.YOPComparisonsGraduationPG.YOPBetweenGraduationAndPGWithValidData()'><b>YOPBetweenGraduationAndPGWithValidData</b><br>Test class: com.BEd.Tests.YOPComparisonsGraduationPG</td>
+<td></td>
+<td>53</td>
+<td>com.BEd.Tests.YOPComparisonsGraduationPG@75f5fd58</td></tr>
+</table><p>
+</body>
+</html>

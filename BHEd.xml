@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BHEdSuite">
+
+	<listeners>
+		<listener class-name="com.BHEd.Listeners.TestListener" />
+
+	</listeners>
+
+
+	<test name="ScenarioTesting">
+
+		<classes>
+
+			<class name="com.BHEd.Tests.ApplyingCAFWithDifferentBoards" /> 
+
+			<class name="com.BHEd.Tests.ApplyingCAFWithDiffernetExamType" />
+
+			<class name="com.BHEd.Tests.ApplyingCAFWithDiffGender" />
+
+			<class name="com.BHEd.Tests.MobileNoComparison" />
+
+			<class name="com.BHEd.Tests.ReadonlyMobileNo" />
+
+			<class name="com.BHEd.Tests.ReadOnlyEmailId" />
+
+			<class name="com.BHEd.Tests.AadhaarValidations" />
+
+			<class name="com.BHEd.Tests.OdiaCriteria" />
+
+			<class name="com.BHEd.Tests.MarksComparison" />
+			
+			<class name="com.BHEd.Tests.CGPAComparison" />
+
+			<class name="com.BHEd.Tests.YOPComparisons10th12th" />
+
+			<class name="com.BHEd.Tests.YOPComparisons12thGraduation" />
+			
+			<class name="com.BHEd.Tests.YOPComparisonsGraduationPG" />
+
+			<class name="com.BHEd.Tests.ApplyingCAFByAppearingGraduate" />
+
+			<class name="com.BHEd.Tests.ExServiceman" />
+
+			<class name="com.BHEd.Tests.PHCategoryValidations" />
+
+			<class name="com.BHEd.Tests.LocomotorDisabilityValidations" />
+			
+			<class name="com.BHEd.Tests.EligibilityCriteria10th12thMarks" />
+			
+			<class name="com.BHEd.Tests.EligibilityCriteria10th12thCGPA" />
+
+			<class name="com.BHEd.Tests.EligibilityCriteriaForGeneralMarks" />
+
+			<class name="com.BHEd.Tests.EligibilityCriteriaForSCMarks" />
+
+			<class name="com.BHEd.Tests.EligibilityCriteriaForSTMarks" />
+
+			<class name="com.BHEd.Tests.EligibilityCriteriaForSEBCMarks" />
+
+			<class name="com.BHEd.Tests.EligibilityCriteriaForPHMarks" />
+			
+			<class name="com.BHEd.Tests.EligibilityCriteriaForGeneralCGPA" />
+
+			<class name="com.BHEd.Tests.EligibilityCriteriaForSCCGPA" />
+
+			<class name="com.BHEd.Tests.EligibilityCriteriaForSTCGPA" />
+
+			<class name="com.BHEd.Tests.EligibilityCriteriaForSEBCCGPA" />
+
+			<class name="com.BHEd.Tests.EligibilityCriteriaForPHCGPA" />
+			
+			<class name="com.BHEd.Tests.AgeValidations"/> 
+
+			<class name="com.BHEd.Tests.AgeCriteriaForMaleApplicant" />
+
+			<class name="com.BHEd.Tests.AgeCriteriaForFemaleApplicants" />
+
+			<class name="com.BHEd.Tests.AgeCriteriaForTransgenderApplicants" />
+
+			<class name="com.BHEd.Tests.AgeCriteriaForSCApplicants" />
+
+			<class name="com.BHEd.Tests.AgeCriteriaForSTApplicants" />
+
+			<class name="com.BHEd.Tests.AgeCriteriaForSEBCMaleApplicants" />
+			
+			<!-- <class name="com.BHEd.Tests.SaveAsDraftFunctionality" />
+			
+			<class name="com.BHEd.Tests.SaveAsDraftFunctionalityScenario" /> -->
+			
+			<class name="com.BHEd.Tests.ModificationSaveAsDraftFunctionality" />
+										
+			<class name="com.BHEd.Tests.SubmissionOfCAF" />
+
+			<class name="com.BHEd.Tests.SubmissionofCAFBySameApplicantAgain" />
+
+			<class name="com.BHEd.Tests.SubmissionofCAFWithDuplicateData" />
+
+			<class name="com.BHEd.Tests.SubmissionofCAFWithInvalidData" />
+			
+			<class name="com.BHEd.Tests.BacktoModifyfunctionality"/>
+			
+			<class name="com.BHEd.Tests.CofirmFunctionality"/>
+
+			 <class name="com.BHEd.Tests.ImageUpload"/>
+			
+			
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
