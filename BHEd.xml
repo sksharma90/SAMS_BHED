@@ -16,7 +16,7 @@
 
 			<class name="com.BHEd.Tests.ApplyingCAFWithDiffernetExamType" />
 
-			<class name="com.BHEd.Tests.ApplyingCAFWithDiffGender" />
+			<!--<class name="com.BHEd.Tests.ApplyingCAFWithDiffGender" />
 
 			<class name="com.BHEd.Tests.MobileNoComparison" />
 
@@ -84,9 +84,9 @@
 
 			<class name="com.BHEd.Tests.AgeCriteriaForSEBCMaleApplicants" />
 			
-			<!-- <class name="com.BHEd.Tests.SaveAsDraftFunctionality" />
+			 <class name="com.BHEd.Tests.SaveAsDraftFunctionality" />
 			
-			<class name="com.BHEd.Tests.SaveAsDraftFunctionalityScenario" /> -->
+			<class name="com.BHEd.Tests.SaveAsDraftFunctionalityScenario" /> 
 			
 			<class name="com.BHEd.Tests.ModificationSaveAsDraftFunctionality" />
 										
@@ -102,7 +102,7 @@
 			
 			<class name="com.BHEd.Tests.CofirmFunctionality"/>
 
-			 <class name="com.BHEd.Tests.ImageUpload"/>
+			 <class name="com.BHEd.Tests.ImageUpload"/> -->
 			
 			
 
